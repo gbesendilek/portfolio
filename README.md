@@ -1,19 +1,22 @@
 # Gülce Besen Dilek — Portfolio (GitHub Pages version)
 
-A static rebuild of besendilek.com, matching its page structure and layout (nav, dropdown menu, work grid with hover captions, About/Reel pages). All artwork is currently a placeholder — swap in your own images and gifs before publishing.
+A simple, single-focus portfolio for animation and illustration work. The homepage is one long mixed masonry gallery — no category split between animation and illustration, just the work, largest to smallest, in whatever order looks best. Hover a piece to see its title; click through to that project's own page for more images. All artwork is currently a placeholder — swap in your own images before publishing.
 
-## Files
+## Structure
 
-- `index.html` — homepage / Work grid
-- `about.html`, `reel.html`, `direction.html`
-- `kolaj.html`, `gal.html`, `more-art.html`, `the-solarologist.html`, `private.html`
-- `css/style.css` — all styling
-- `js/script.js` — mobile menu + scroll-in animation
-- `images/` — placeholder graphics (replace these)
+- **Nav**: Work (home), Reel, About — trimmed down from the original site's nav.
+- **Homepage** (`index.html`): a short line ("Every project deserves its unique style."), the long mixed gallery, then a dark bio section at the bottom ("Hello! I'm a 2D animator and illustrator...").
+- **Project pages**: each gallery piece links to its own page with a title, a short meta line (medium · year), the hero image, and a small two-image gallery for additional shots. Files: `katz.html`, `grayzone.html`, `gal.html`, `illustration-mix.html`, `cybercity.html`, `forbidden-tshirt.html`, `kolaj.html`, `paper-moon.html`, `night-runner.html`, `field-notes.html`, `little-things.html`, `after-hours.html`.
+- **About** (`about.html`) and **Reel** (`reel.html`) — unchanged in structure.
+- `css/style.css` — all styling.
+- `js/script.js` — mobile menu + scroll-in animation.
+- `images/` — placeholder graphics (replace these).
+
+Note: `direction.html`, `the-solarologist.html`, `private.html`, and `more-art.html` are no longer linked from anywhere (the Direction sub-menu and the two password-protected pieces were dropped for simplicity). They can be deleted from the repo whenever you like.
 
 ## Replace the placeholders
 
-Each image in `images/` is named for what it shows (e.g. `work-katz.png`, `about-portrait.png`, `logo-placeholder.png`). Just overwrite the file with your real artwork using the **same filename**, or update the `src=` path in the relevant HTML file if you rename it. Animated pieces (like the Green Alternative List and Kolaj gifs on the original site) can be `.gif`, `.webp`, or an embedded video — swap the `<img>` tag accordingly.
+Each image in `images/` is named for what it shows (e.g. `work-katz.png`, `about-portrait.png`, `logo-placeholder.png`). Overwrite the file with your real artwork using the **same filename**, or update the `src=` path in the relevant HTML file if you rename it. On each project page, `detail-placeholder-1.png` / `detail-placeholder-2.png` are the "add more images from this project" slots — replace those with real stills, or add more `<img>` tags to `.project-gallery` for more than two.
 
 The Reel page embeds your existing YouTube video directly, so nothing to change there unless you want a different video.
 
@@ -27,6 +30,6 @@ The Reel page embeds your existing YouTube video directly, so nothing to change 
 6. GitHub will publish your site at `https://<your-username>.github.io/portfolio/` within a minute or two.
 7. Optional: to use your own domain (e.g. besendilek.com), add a `CNAME` file with your domain name, and point your domain's DNS to GitHub Pages per GitHub's custom domain docs.
 
-## Notes on this being a "1:1 copy"
+## Design notes
 
-I couldn't visually inspect your live Squarespace site's exact CSS (colors/fonts/pixel spacing) because I only have text/programmatic access, not a rendered browser — the Chrome browser tool wasn't connected in this session. So I rebuilt the **structure, navigation, page content, and layout pattern** exactly as they appear on besendilek.com (same nav items, same grid-of-work-with-italic-captions pattern, same About/Reel copy), styled in a clean minimal look similar to the original. If you want pixel-perfect matching of your exact fonts/colors, let me know and I can refine it once you share screenshots or the Squarespace theme name, or once the Chrome extension is connected so I can inspect it directly.
+Black tagline bar under the header, a full-bleed masonry work grid (CSS multi-column layout, so mixed image sizes read as casual rather than uniform), hover-reveal captions showing just the project name, and a dark two-column bio section at the bottom of the homepage.

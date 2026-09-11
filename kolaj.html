@@ -10,29 +10,27 @@
 
 <header class="site-header">
   <button class="nav-toggle" aria-label="Toggle menu">☰</button>
-  <nav class="main-nav">
-    <a href="index.html">Work</a>
-    <a href="reel.html">Reel</a>
+  <nav class="main-nav main-nav--centered">
     <div class="dropdown">
-      <span>Direction</span>
+      <a href="index.html" class="active">Work</a>
       <div class="dropdown-menu">
+        <a href="katz.html">Bakery Katz</a>
+        <a href="grayzone.html">Gray Zone</a>
+        <a href="gal.html">Green Alternative</a>
         <a href="kolaj.html">Kolaj</a>
-        <a href="gal.html">Green Alternative List</a>
-        <a href="the-solarologist.html">The Solarologist 🔒</a>
-        <a href="private.html">Private 🔒</a>
+        <a href="cybercity.html">Cyber City</a>
+        <a href="mt.html">Themis</a>
       </div>
     </div>
-    <a href="more-art.html">More Art</a>
+    <a href="reel.html">Reel</a>
     <a href="about.html">About</a>
   </nav>
-  <div class="logo">
+  <div class="logo logo--katz">
     <a href="index.html">
-      <svg viewBox="0 0 60 70" xmlns="http://www.w3.org/2000/svg">
-        <path d="M30 6 C18 14, 42 24, 24 34 C12 41, 38 47, 26 58 M18 60 C24 66, 36 65, 32 61" fill="none" stroke="#111111" stroke-width="2.5" stroke-linecap="round"/>
-      </svg>
+      <img src="images/logo.png" alt="Gülce Besen Dilek">
     </a>
   </div>
-  <div class="social-links">
+  <div class="social-links social-links--centered">
     <a href="https://www.instagram.com/besenism/" target="_blank" rel="noopener" aria-label="Instagram">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="0.9" fill="currentColor" stroke="none"/></svg>
     </a>
@@ -45,33 +43,105 @@
   </div>
 </header>
 
-<div class="tagline-bar">Animation &middot; Concept &middot; Illustration</div>
+<div class="tagline-bar tagline-bar--light">Animation &middot; Illustration</div>
 
-<main class="page-content">
-  <p><a href="direction.html">&larr; Back to Direction</a></p>
-  <h1>Kolaj</h1>
-  <figure>
-    <img src="images/work-kolaj.png" alt="Kolaj">
-    <figcaption>Replace this placeholder with stills, gifs, or an embedded video of the Kolaj project.</figcaption>
-  </figure>
-  <p>Add your project description, credits, and any embedded video here.</p>
+<main class="kolaj-page">
+  <div class="kolaj-hero">
+    <div class="kolaj-poster">
+      <img src="images/kolaj-poster.png" alt="Kolaj poster">
+    </div>
+    <div class="kolaj-intro">
+      <img class="kolaj-title-img" src="images/kolaj-title.png" alt="Kolaj — Collage, Animated Short Film">
+      <p class="kolaj-desc">Kolaj is a 2022 animated short film about identity, written, directed, and produced by Gülce Besen Dilek. It is a multi-award-winning film that was nominated for both the German Short Film Award and the Annie Awards in 2024. Scroll down to watch the trailer.</p>
+    </div>
+  </div>
+
+  <div class="kolaj-section kolaj-vd-section">
+    <h2 class="kolaj-vd-heading">Visual Development</h2>
+    <div class="kolaj-vd">
+      <img src="images/kolaj-vd-1.jpg" alt="Kolaj visual development — character turnaround">
+      <img src="images/kolaj-vd-2.jpg" alt="Kolaj visual development — character sketches">
+      <img src="images/kolaj-vd-3.jpg" alt="Kolaj visual development — character sketches">
+    </div>
+  </div>
+
+  <div class="kolaj-section kolaj-trailer-section">
+    <h2 class="kolaj-vd-heading kolaj-trailer-heading">Trailer</h2>
+    <div class="kolaj-video-embed">
+      <iframe src="https://www.youtube.com/embed/pD6K3YUQTew" title="Kolaj | Trailer (2022)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="kolaj-section kolaj-credits-section">
+    <img class="kolaj-credits-img" src="images/kolaj-credits.png" alt="Kolaj credits">
+  </div>
 </main>
 
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">&#8249;</button>
+  <img id="lightboxImg" src="" alt="">
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">&#8250;</button>
+</div>
+
 <footer class="site-footer">
-  <p>&copy; Gülce Besen Dilek 2025</p>
-  <div class="social-links">
-    <a href="https://www.instagram.com/besenism/" target="_blank" rel="noopener" aria-label="Instagram">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="0.9" fill="currentColor" stroke="none"/></svg>
-    </a>
-    <a href="https://www.linkedin.com/in/g%C3%BClce-besen-dilek-b94575223/" target="_blank" rel="noopener" aria-label="LinkedIn">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="4"/><line x1="7" y1="10" x2="7" y2="17"/><circle cx="7" cy="6.6" r="0.9" fill="currentColor" stroke="none"/><path d="M11 17v-4.3c0-1.6 1-2.7 2.4-2.7s2.4 1.1 2.4 2.7V17"/><line x1="11" y1="10" x2="11" y2="17"/></svg>
-    </a>
-    <a href="mailto:gbesendilek@gmail.com" aria-label="Email">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 6.5l9 6.5 9-6.5"/></svg>
-    </a>
-  </div>
+  <p>&copy; Gülce Besen Dilek 2026</p>
+  <p class="site-footer-impressum"><a href="impressum.html">Impressum</a></p>
 </footer>
 
 <script src="js/script.js"></script>
+<script>
+  (function () {
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImg = document.getElementById('lightboxImg');
+    var closeBtn = document.getElementById('lightboxClose');
+    var prevBtn = document.getElementById('lightboxPrev');
+    var nextBtn = document.getElementById('lightboxNext');
+    var galleryImgs = Array.prototype.slice.call(document.querySelectorAll('.kolaj-vd img'));
+    var currentIndex = 0;
+
+    function showImage(index) {
+      currentIndex = (index + galleryImgs.length) % galleryImgs.length;
+      var img = galleryImgs[currentIndex];
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+    }
+
+    galleryImgs.forEach(function (img, index) {
+      img.addEventListener('click', function () {
+        showImage(index);
+        lightbox.classList.add('open');
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      lightboxImg.src = '';
+    }
+
+    function showPrev() {
+      showImage(currentIndex - 1);
+    }
+
+    function showNext() {
+      showImage(currentIndex + 1);
+    }
+
+    closeBtn.addEventListener('click', closeLightbox);
+    prevBtn.addEventListener('click', showPrev);
+    nextBtn.addEventListener('click', showNext);
+
+    lightbox.addEventListener('click', function (e) {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (!lightbox.classList.contains('open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') showPrev();
+      if (e.key === 'ArrowRight') showNext();
+    });
+  })();
+</script>
 </body>
 </html>

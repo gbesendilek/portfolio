@@ -9,16 +9,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // On mobile, tapping "Direction" expands its submenu instead of relying on hover
+  // On mobile, tapping "Work" expands its submenu instead of relying on hover
   const dropdown = document.querySelector(".dropdown");
   if (dropdown) {
-    const trigger = dropdown.querySelector("span");
-    trigger.addEventListener("click", (e) => {
-      if (window.innerWidth <= 700) {
-        e.preventDefault();
-        dropdown.classList.toggle("open");
-      }
-    });
+    const trigger = dropdown.querySelector("a");
+    if (trigger) {
+      trigger.addEventListener("click", (e) => {
+        if (window.innerWidth <= 700) {
+          e.preventDefault();
+          dropdown.classList.toggle("open");
+        }
+      });
+    }
   }
 
   // Fade-in animation for work grid items as they scroll into view
