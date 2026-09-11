@@ -900,7 +900,8 @@ img { max-width: 100%; display: block; }
 @media (max-width: 900px) {
   .folder-list { column-count: 2; }
   .bio-grid { flex-direction: column; gap: 24px; }
-  .bio-lead { flex: none; white-space: normal; }
+  .bio-lead { flex: none; white-space: normal; font-size: 18px; }
+  .bio-text p { font-size: 13px; }
 }
 
 @media (max-width: 700px) {
@@ -1009,7 +1010,7 @@ img { max-width: 100%; display: block; }
   position: relative;
   z-index: 1;
   display: block;
-  width: 230px;
+  width: 150px;
   margin: 130px 0 0 55px;
 }
 
