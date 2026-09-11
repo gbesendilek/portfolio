@@ -1168,7 +1168,7 @@ img { max-width: 100%; display: block; }
   .about-hero-text { padding: 48px 24px 56px; }
   .about-hero-text h1 { font-size: 40px; }
   .about-hero-photo { min-height: 360px; order: -1; }
-  .about-approach { flex-direction: column; padding: 36px 24px 60px; gap: 18px; }
+  .about-approach { flex-direction: column; padding: 36px 24px 60px; gap: 6px; }
   .about-approach-visual { min-height: 270px; width: 100%; }
   .about-contact { flex-direction: column; padding: 60px 24px 100px; gap: 48px; }
   .form-row { flex-direction: column; gap: 20px; }
