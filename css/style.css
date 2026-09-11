@@ -414,7 +414,7 @@ img { max-width: 100%; display: block; }
 .section-subtitle {
   font-weight: 600;
   font-size: 15px;
-  margin-bottom: 60px;
+  margin-bottom: 28px;
 }
 
 /* Unaligned gallery for project pages — explicit columns (not CSS
@@ -432,7 +432,7 @@ img { max-width: 100%; display: block; }
    page's centered container but at half the inset. */
 .comic-columns--inset {
   max-width: 1200px;
-  margin: -38px auto 0;
+  margin: -15px auto 0;
   padding-bottom: 45px;
 }
 
@@ -459,7 +459,7 @@ img { max-width: 100%; display: block; }
 
 .video-grid--inset {
   max-width: 1200px;
-  margin: -14px auto 0;
+  margin: 10px auto 0;
   padding-top: 0;
 }
 
@@ -639,6 +639,10 @@ img { max-width: 100%; display: block; }
   padding-bottom: 30px;
 }
 
+.gal-dark-section .project-header.project-header--reel-aligned h1 {
+  font-size: 20px;
+}
+
 /* Three-up video layout for project pages (e.g. Green Alternative List).
    Videos show at their full natural size — no aspect-ratio box, no
    cropping — just scaled to fit the column width. */
@@ -698,6 +702,17 @@ img { max-width: 100%; display: block; }
   color: var(--cream);
 }
 
+/* Green Alternative List page only: slightly tighter title/subtitle
+   gap, more breathing room before the video grid, and more black
+   background below the videos. */
+.gal-dark-section .project-header.project-header--spaced h1 {
+  margin-bottom: 22px;
+}
+
+.gal-dark-section .video-grid {
+  padding: 64px 20px 160px;
+}
+
 /* Kolaj page only: replicates the layout of the old site — a full-bleed
    light gray background behind all the content sections, with a
    centered container so there's visible gray margin on both sides,
@@ -711,7 +726,7 @@ img { max-width: 100%; display: block; }
 
 .kolaj-hero {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   gap: 64px;
   max-width: 960px;
   margin: 0 auto;
@@ -730,11 +745,11 @@ img { max-width: 100%; display: block; }
 .kolaj-intro {
   flex: 1;
   max-width: 560px;
-  margin-bottom: 90px;
+  margin-bottom: 81px;
 }
 
 .kolaj-title-img {
-  max-width: 205px;
+  max-width: 197px;
   width: 100%;
   height: auto;
   display: block;
@@ -762,7 +777,7 @@ img { max-width: 100%; display: block; }
 }
 
 .kolaj-vd-section {
-  padding-top: 55px;
+  padding-top: 50px;
 }
 
 .kolaj-trailer-section {
@@ -1011,7 +1026,7 @@ img { max-width: 100%; display: block; }
   z-index: 1;
   display: block;
   width: 150px;
-  margin: 130px 0 0 55px;
+  margin: 78px 0 0 55px;
 }
 
 .about-approach-text {
