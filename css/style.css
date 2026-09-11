@@ -892,7 +892,7 @@ img { max-width: 100%; display: block; }
 @media (max-width: 900px) {
   .folder-list { column-count: 2; }
   .bio-grid { flex-direction: column; gap: 24px; }
-  .bio-lead { flex: none; }
+  .bio-lead { flex: none; white-space: normal; }
 }
 
 @media (max-width: 700px) {
@@ -924,6 +924,7 @@ img { max-width: 100%; display: block; }
   .work-grid { flex-direction: column; }
   .folder-list { column-count: 1; }
   .bio-dark { padding: 70px 24px; }
+  .gal-dark-section .project-header.project-header--reel-aligned { padding: 60px 20px 24px; }
 }
 
 /* ---------------- About page ---------------- */
@@ -1133,6 +1134,8 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 900px) {
   .about-hero { flex-direction: column; min-height: 0; }
+  .about-hero-text { padding: 48px 24px 56px; }
+  .about-hero-text h1 { font-size: 40px; }
   .about-hero-photo { min-height: 360px; order: -1; }
   .about-approach { flex-direction: column; padding: 60px 24px; gap: 32px; }
   .about-approach-visual { min-height: 320px; width: 100%; }
