@@ -612,7 +612,15 @@ img { max-width: 100%; display: block; }
    than the default --max-width. */
 .video-embed--white {
   max-width: 1080px;
-  margin-bottom: 100px;
+  margin-bottom: 0;
+}
+
+/* Reel page only: the dark section wraps the title and video, and
+   needs its own bottom padding (instead of the video's old
+   margin-bottom) so the black background extends all the way down
+   to the footer instead of leaving a white gap. */
+.gal-dark-section--reel {
+  padding-bottom: 100px;
 }
 
 .video-embed--white iframe,
