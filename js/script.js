@@ -16,8 +16,13 @@ document.addEventListener("DOMContentLoaded", () => {
     if (trigger) {
       trigger.addEventListener("click", (e) => {
         if (window.innerWidth <= 700) {
-          e.preventDefault();
-          dropdown.classList.toggle("open");
+          if (!dropdown.classList.contains("open")) {
+            // First tap: open the submenu instead of navigating.
+            e.preventDefault();
+            dropdown.classList.add("open");
+          }
+          // Second tap (menu already open): let the link navigate
+          // normally to the Work page.
         }
       });
     }
