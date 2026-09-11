@@ -896,9 +896,12 @@ img { max-width: 100%; display: block; }
 }
 
 @media (max-width: 700px) {
-  .site-header { grid-template-columns: auto 1fr auto; padding: 16px 20px; }
-  .nav-toggle { display: block; }
+  .site-header { grid-template-columns: 1fr auto 1fr; padding: 16px 20px; }
+  .nav-toggle { display: block; justify-self: start; }
   .logo img, .logo svg { height: 44px; }
+  .social-links { gap: 10px; }
+  .social-links svg { width: 16px; height: 16px; }
+  .tagline-bar { font-size: 10px; letter-spacing: 0.16em; padding: 14px 20px; }
   .main-nav {
     grid-column: 1 / -1;
     order: 4;
