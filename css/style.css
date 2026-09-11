@@ -1022,15 +1022,15 @@ img { max-width: 100%; display: block; }
 .about-approach-visual {
   flex: 1;
   position: relative;
-  min-height: 420px;
+  min-height: 360px;
 }
 
 .about-approach-illustration {
   position: relative;
   z-index: 1;
   display: block;
-  width: 150px;
-  margin: 78px 0 0 55px;
+  width: 128px;
+  margin: 55px 0 0 55px;
 }
 
 .about-approach-text {
@@ -1064,7 +1064,7 @@ img { max-width: 100%; display: block; }
 }
 
 .about-page p.about-contact-connect {
-  margin-top: 70px;
+  margin-top: 48px;
 }
 
 .about-contact-socials {
@@ -1169,7 +1169,7 @@ img { max-width: 100%; display: block; }
   .about-hero-text h1 { font-size: 40px; }
   .about-hero-photo { min-height: 360px; order: -1; }
   .about-approach { flex-direction: column; padding: 36px 24px 60px; gap: 18px; }
-  .about-approach-visual { min-height: 320px; width: 100%; }
+  .about-approach-visual { min-height: 270px; width: 100%; }
   .about-contact { flex-direction: column; padding: 60px 24px 100px; gap: 48px; }
   .form-row { flex-direction: column; gap: 20px; }
 }
