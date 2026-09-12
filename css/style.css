@@ -1022,15 +1022,15 @@ img { max-width: 100%; display: block; }
 .about-approach-visual {
   flex: 1;
   position: relative;
-  min-height: 360px;
+  min-height: 420px;
 }
 
 .about-approach-illustration {
   position: relative;
   z-index: 1;
   display: block;
-  width: 128px;
-  margin: 55px 0 0 55px;
+  width: 150px;
+  margin: 78px 0 0 55px;
 }
 
 .about-approach-text {
@@ -1170,6 +1170,7 @@ img { max-width: 100%; display: block; }
   .about-hero-photo { min-height: 360px; order: -1; }
   .about-approach { flex-direction: column; padding: 36px 24px 60px; gap: 6px; }
   .about-approach-visual { min-height: 270px; width: 100%; }
+  .about-approach-illustration { width: 128px; margin: 55px 0 0 55px; }
   .about-contact { flex-direction: column; padding: 60px 24px 100px; gap: 48px; }
   .form-row { flex-direction: column; gap: 20px; }
 }
