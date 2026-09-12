@@ -459,7 +459,7 @@ img { max-width: 100%; display: block; }
 
 .video-grid--inset {
   max-width: 1200px;
-  margin: 10px auto 0;
+  margin: -20px auto 0;
   padding-top: 0;
 }
 
@@ -730,7 +730,7 @@ img { max-width: 100%; display: block; }
 
 .kolaj-hero {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 64px;
   max-width: 960px;
   margin: 0 auto;
@@ -739,6 +739,7 @@ img { max-width: 100%; display: block; }
 
 .kolaj-poster {
   flex: 0 0 400px;
+  align-self: center;
 }
 
 .kolaj-poster img {
